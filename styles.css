@@ -1,7 +1,28 @@
-:root { --bg:#0b1020; --fg:#e7ecff; --muted:#a7b0d8; --card:#141b34; }
-*{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:linear-gradient(180deg,#0b1020,#0d1326);color:var(--fg)}
-.wrap{width:min(1100px,92vw);margin:0 auto;padding:20px} header.wrap{display:flex;flex-direction:column;gap:8px}
-h1{margin:8px 0;font-size:28px}.tagline{color:var(--muted);margin:0 0 8px}
-nav a{color:var(--fg);text-decoration:none}
-.muted{color:var(--muted)} .iframe-wrap{overflow:hidden;border-radius:12px}
+:root { --bg:#0b1020; --fg:#e7ecff; --muted:#a7b0d8; --card:#141b34; --brand:#7aa2ff; --brand-2:#54f0d1; }
+*{box-sizing:border-box}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b1020,#0d1326);color:var(--fg)}
+.wrap{width:min(1100px,92vw);margin:0 auto;padding:20px}
+header.wrap{display:flex;flex-direction:column;gap:8px}
+h1{margin:8px 0;font-size:28px;letter-spacing:.4px}
+.tagline{color:var(--muted);margin:0 0 8px}
+nav{display:flex;gap:14px;flex-wrap:wrap}
+nav a{color:var(--fg);text-decoration:none;opacity:.9;padding:6px 10px;border-radius:10px;transition:opacity .2s ease,background-color .2s ease}
+nav a.active,nav a:hover{background:rgba(122,162,255,.12);opacity:1}
+.hero ul{margin:0 0 18px;padding-left:20px}
+.hero li{margin:8px 0}
+.cta-row{display:flex;gap:10px;flex-wrap:wrap}
+.btn{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0a0f1f;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:700;box-shadow:0 8px 20px rgba(84,240,209,.15);display:inline-block}
+.btn.secondary{background:#1c264a;color:var(--fg);box-shadow:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:24px 0 40px}
+.card{background:var(--card);border:1px solid #1e264f;padding:16px;border-radius:16px}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.price-card{background:var(--card);border:1px solid #1e264f;padding:16px;border-radius:16px}
+.price-card.highlight{outline:2px solid var(--brand)}
+.price{font-size:32px;font-weight:700;margin:12px 0}
+.muted{color:var(--muted)}
+.iframe-wrap{overflow:hidden;border-radius:12px}
 footer.wrap{color:var(--muted);font-size:14px;border-top:1px solid #1b2347;margin-top:40px}
+@media (max-width:600px){
+  nav{gap:8px}
+  .cta-row{flex-direction:column}
+}

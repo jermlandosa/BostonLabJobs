@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jermlandosa.github.io/BostonLabJobs/sitemap.xml
