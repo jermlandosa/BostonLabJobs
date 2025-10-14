@@ -1,0 +1,3 @@
+job_id,company,title,location,onsite_remote,seniority,department,source,url,salary_min,salary_max,posted_date,scraped_at,status,featured_until,hash,is_published,notes
+biogen-research-associate-cambridge-ma-2025-10-01,Biogen,Research Associate I (Cell Biology),Cambridge, MA,On-site,Associate,Research,Greenhouse,https://boards.greenhouse.io/biogen/jobs/EXAMPLE,70000,85000,2025-10-01,2025-10-14,Open,,,"TRUE","Seed example row – replace with live scraped data."
+takeda-qc-analyst-boston-ma-2025-10-02,Takeda,QC Analyst (Microbiology),Boston, MA,On-site,Associate,QC,Workday,https://takeda.wd3.myworkdayjobs.com/EXAMPLE,65000,80000,2025-10-02,2025-10-14,Open,,,"TRUE","Seed example row – replace with live scraped data."
