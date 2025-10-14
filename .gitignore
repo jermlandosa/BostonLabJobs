@@ -1,0 +1,5 @@
+# Ignore local dependencies and build artifacts
+node_modules/
+
+# Apify actor dependencies
+bostonlabjobs_starter_kit/apify_actor_greenhouse/node_modules/
